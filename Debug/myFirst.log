@@ -1,0 +1,5 @@
+﻿  first.cpp
+F:\project c++\myFirst\first.cpp(1,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+F:\project c++\myFirst\first.cpp(2,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+F:\project c++\myFirst\first.cpp(6,6): warning C4101: “a”: 未引用的局部变量
+  myFirst.vcxproj -> F:\project c++\myFirst\Debug\myFirst.exe

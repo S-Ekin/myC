@@ -1,0 +1,2 @@
+F:\project c++\myFirst\Debug\myFirst.exe
+F:\project c++\myFirst\Debug\myFirst.pdb
