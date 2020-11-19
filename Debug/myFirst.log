@@ -1,4 +1,0 @@
-﻿  first.cpp
-F:\project c++\myFirst\first.cpp(1,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-F:\project c++\myFirst\first.cpp(2,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-  myFirst.vcxproj -> F:\project c++\myFirst\Debug\myFirst.exe
