@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="first.cpp" />
-    <ClCompile Include="second.cpp" />
+    <ClCompile Include="stringTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales.item.h" />
