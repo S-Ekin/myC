@@ -34,7 +34,7 @@ using namespace std;
 
 	 return str;
  }
-int main() {
+int main1() {
 	string str = "qer3fads!!!!!@q";
 	decltype(str.size()) punt_cnt = 0;
 	string res ="";

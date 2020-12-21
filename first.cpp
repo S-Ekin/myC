@@ -11,7 +11,7 @@ struct Sales_data {
 	double revenue = 0.0;
 	double price;
 };
-int _main() {
+int main0() {
 	Sales_data data1, data2;
 	cin >> data1.bookNo >> data1.units_sold >> data1.price;
 	data1.revenue = data1.price * data1.units_sold;
