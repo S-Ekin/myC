@@ -142,6 +142,7 @@
     <ClCompile Include="first.cpp" />
     <ClCompile Include="stringTest.cpp" />
     <ClCompile Include="vector.cpp" />
+    <ClCompile Include="iter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales.item.h" />

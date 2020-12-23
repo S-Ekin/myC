@@ -40,7 +40,33 @@ void uPWord() {
 		cout << i << endl;
 	}
 }
-int main() {
+// 计算容器里的值
+void count() {
+	vector<int> arr;
+	int t;
+	while (cin >> t)
+	{
+		arr.push_back(t);
+	}
+
+	auto size = arr.size();
+
+	for (size_t i= 0; i < size; i+=2)
+	{
+		if (i+1 < size) {
+			int sum = arr[i] + arr[i + 1];
+			cout << sum << endl;
+		}
+	}
+
+	for (size_t i = 0; i < size; i++)
+	{
+		int sum = arr[i] + arr[size - 1 - i];
+		cout << sum << endl;
+	}
+
+}
+int main3() {
 	uPWord();
 	return 0;
 }
