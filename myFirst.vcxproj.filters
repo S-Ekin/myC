@@ -15,16 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="first.cpp">
+    <ClCompile Include="first_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="stringTest.cpp">
+    <ClCompile Include="vector_3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="vector.cpp">
+    <ClCompile Include="iter_4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="iter.cpp">
+    <ClCompile Include="string_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arr_5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -5,7 +5,7 @@
 #include <iostream>;
 #include <vector>;
 using namespace std;
-
+// 关键子 箭头运算符
 void iter() {
 	string s("sadfasdf");
 	if (s.begin() != s.end()) {
@@ -53,7 +53,7 @@ void countIterator() {
 		cout << "首尾：" << sum << endl;
 	}
 }
-int main() {
+int main4() {
 	countIterator();
 	string str("abcdef");
 	string::iterator s = str.begin();

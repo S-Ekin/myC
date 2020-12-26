@@ -3,6 +3,13 @@
 #include <vector>;
 using namespace std;
 
+void initVector() {
+	int a = 34;
+	int& r = a;
+	vector<int> v = {r};
+	auto v1 = v;
+}
+
 // Ìí¼Ó
 void pushFn() {
 	string word;

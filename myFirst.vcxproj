@@ -139,10 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="first.cpp" />
-    <ClCompile Include="stringTest.cpp" />
-    <ClCompile Include="vector.cpp" />
-    <ClCompile Include="iter.cpp" />
+    <ClCompile Include="arr_5.cpp" />
+    <ClCompile Include="first_1.cpp" />
+    <ClCompile Include="string_2.cpp" />
+    <ClCompile Include="vector_3.cpp" />
+    <ClCompile Include="iter_4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales.item.h" />
