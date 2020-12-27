@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="arr_5.cpp" />
     <ClCompile Include="first_1.cpp" />
+    <ClCompile Include="Memo.cpp" />
     <ClCompile Include="string_2.cpp" />
     <ClCompile Include="vector_3.cpp" />
     <ClCompile Include="iter_4.cpp" />

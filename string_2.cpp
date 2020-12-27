@@ -106,7 +106,7 @@ using namespace std;
 		 cout << "ÏàÍ¬" << endl;
 	 }
  }
-int main() {
+int main2() {
 	charOpt();
 	return 0;
 }

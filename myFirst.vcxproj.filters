@@ -30,6 +30,9 @@
     <ClCompile Include="arr_5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Memo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sales.item.h">
