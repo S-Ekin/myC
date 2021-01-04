@@ -1,5 +1,6 @@
 /*
-数组
+数组 ************************ 始终记住使用数组的名字时， 会被替换为指向数组首元素的指针  *********************
+
 */
 #include <iostream>;
 #include <string>;
@@ -23,7 +24,10 @@ void initArr() {
 	int(*arr_point)[sz] = &arr;
 	auto* arr_point2 = &arr;
 
-	// 复杂的
+	// 成员是指针的数组
+	int* arr_ptr[2] = {&arr[0],&arr[1]};
+
+	// 复杂的 
 	int* ptr[sz];
 	int* (&arr_ptr_refence)[sz] = ptr;
 	// 等价
@@ -35,6 +39,30 @@ void initArr() {
 	{
 		cout <<"int: "<< num[i] << " string: " << sa[i]<< endl;
 	}
+
+}
+
+// 多维数组 
+void arrFn() {
+	int arr[3][4] = { {1,2,3},{4,5,6},{7}};
+
+	for (auto p = arr; p != arr + 3; ++p) {
+		for (auto q = p; q != p + 4; ++q) {
+			cout << *q << endl;
+		}
+	}
+}
+
+// 类型别名的数组
+
+void typeArr() {
+	
+	using int_arr = int[4];
+	typedef int int_arr1[4];
+
+	int_arr arr = {};
+	int_arr* p = &arr;
+	int_arr1* p1 = &arr;
 
 }
 

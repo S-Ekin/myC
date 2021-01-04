@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="arr_5.cpp" />
+    <ClCompile Include="expr.cpp" />
     <ClCompile Include="first_1.cpp" />
     <ClCompile Include="Memo.cpp" />
     <ClCompile Include="string_2.cpp" />

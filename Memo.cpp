@@ -35,7 +35,7 @@ void Show(Memo m)
 {
 	m.Call();
 }
-int main()
+int _main()
 {
 	Memo m;
 	Memo* pm = &m;
