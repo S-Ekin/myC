@@ -38,12 +38,12 @@ void test() {
 	int* p = x;
 	auto d = 3.45 + 3;
 	cout << sizeof(x) / sizeof(*x) << endl;
-	cout << sizeof(p) / sizeof(*p) << endl; // sizeof(p) 是指针所占的大小，不是 x
+	// cout << sizeof(p) / sizeof(*p) << endl; // sizeof(p) 是指针所占的大小，不是 x
 	cout << sizeof(x) / sizeof(*p) << endl;
 }
 
 void transform() {
-	const char* cp;
+	const char* cp = "stt";
 	//	char* q = static_cast<char*>(cp); //错误 stati_cast 只能转换非底层的const
 	//	char *st =	static_cast<string>(cp); // 错误
 	string t = static_cast<string>(cp);
@@ -57,12 +57,13 @@ void excise() {
 	{
 		c *= static_cast<int>(b);
 	}
-	char* pc;
+	const char* pc = "asdf";
 	c = static_cast<int>(*pc);
 }
 
 void excise2() {
-	int i; double d; const string* ps; char* pc; void* pv;
+	const string str = "动阀";
+	int i; double d; const string* ps = &str; const char* pc = "w"; void* pv;
 	// 旧式写法
 	pv = (void*)ps;
 	i = int(*pc);
@@ -75,7 +76,7 @@ void excise2() {
 	pc = static_cast<char*>(pv);
 }
 
-int main() {
+int main_6() {
 	excise();
 	return 0;
 }
