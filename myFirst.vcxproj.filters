@@ -36,7 +36,13 @@
     <ClCompile Include="expr_6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="block.cpp">
+    <ClCompile Include="block_7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fun_8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fun_9.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,6 +51,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="text.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="factor.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
