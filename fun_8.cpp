@@ -169,7 +169,7 @@ bool str_subrange(const string& str1, const string& str2) {
 auto arrfn2(int (*a)[10])->int(*)[10]{
 	return a;
 }
-
+// 返回数组指针的函数
 string(& strArrFn())[10];
 
 typedef string arrStr[10];
@@ -187,6 +187,7 @@ decltype(arrTest)* strArrFn2() {
 
 
 
-int main(int argc, char *argv[]) {
+int main_8(int argc, char *argv[]) {
 	fnReTest();
+	return 0;
 }

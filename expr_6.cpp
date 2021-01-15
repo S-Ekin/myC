@@ -46,9 +46,13 @@ void transform() {
 	const char* cp = "stt";
 	//	char* q = static_cast<char*>(cp); //错误 stati_cast 只能转换非底层的const
 	//	char *st =	static_cast<string>(cp); // 错误
-	string t = static_cast<string>(cp);
+	string t = static_cast<string>(cp); // 大类型变为小类型， double -> int 
 	//	const_cast<string>(cp); // 错误 const_cast只能改变常量属性
-	const_cast<char*>(cp);
+	const_cast<char*>(cp); // 去掉或加上 底层const
+
+	string str = "er";
+//	int a = static_cast<int>(str);
+
 }
 void excise() {
 	int c = 4;
