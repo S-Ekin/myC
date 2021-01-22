@@ -23,6 +23,7 @@ void pushFn() {
 // for ±éÀú
 void forFn() {
 	vector<int> v(10, 4);
+//	vector<int> a = vector<int>(10, 4);
 	int index = 0;
 	for (auto& i : v) {
 		index++;

@@ -118,10 +118,11 @@ void ptrFnTest() {
 string fnTest1() {
 	return "fasdf";
 }
-int main() {
+int main9() {
 	string c = "asd";
 	cout << &c << endl;
 	string& b = c;
 	auto a = fnTest1();
 	cout << a;
+	return 0;
 }

@@ -70,6 +70,10 @@ void typeArr() {
 void arrIter() {
 	int arr[10];
 	int index = 0;
+
+	//int c[10] ;
+	//c = arr;
+
 	for (int& i : arr) {
 		i = index;
 		++index;
