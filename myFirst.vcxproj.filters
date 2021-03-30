@@ -30,9 +30,6 @@
     <ClCompile Include="arr_5.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Memo.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="expr_6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -51,7 +48,10 @@
     <ClCompile Include="classFn11.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Window_mgr.cpp">
+    <ClCompile Include="Window_mgr12.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mytest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -71,11 +71,19 @@
     <ClInclude Include="Person7.4.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Screen.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Window_mgr.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Screen7.3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myFirst.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

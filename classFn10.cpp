@@ -60,7 +60,7 @@ void salesFn() {
 	}
 }
 
-int main11() {
+int main10() {
 	salesFn();
 	return 0;
 }

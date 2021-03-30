@@ -146,21 +146,25 @@
     <ClCompile Include="expr_6.cpp" />
     <ClCompile Include="first_1.cpp" />
     <ClCompile Include="fun_8.cpp" />
-    <ClCompile Include="Memo.cpp" />
     <ClCompile Include="string_2.cpp" />
+    <ClCompile Include="mytest.cpp" />
     <ClCompile Include="vector_3.cpp" />
     <ClCompile Include="iter_4.cpp" />
     <ClCompile Include="fun_9.cpp" />
-    <ClCompile Include="Window_mgr.cpp" />
+    <ClCompile Include="Window_mgr12.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person7.4.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Sales.item.h" />
     <ClInclude Include="Sales_data.h" />
-    <ClInclude Include="Screen.h" />
+    <ClInclude Include="Screen7.3.h" />
     <ClInclude Include="text.h" />
     <ClInclude Include="factor.h" />
     <ClInclude Include="Window_mgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="myFirst.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

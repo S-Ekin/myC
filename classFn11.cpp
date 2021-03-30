@@ -48,7 +48,7 @@ void salesFn3() {
 	print(cout, sum);
 }
  
- int main() {
+ int main11() {
 	 addTest();
 	return 0;
 }
