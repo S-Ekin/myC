@@ -5,7 +5,7 @@ using std::string;
 // class Window_mgr;
 class Screen
 {
-	// friend void Window_mgr::clear(Window_mgr::ScreenIndex); // ²»ĞèÒª¶îÍâ include Window_mgr;
+	// friend void Window_mgr::clear(Window_mgr::ScreenIndex); // ä¸éœ€è¦é¢å¤– include Window_mgr;
 public:
 	typedef string::size_type pos;     //	using pos = string::size_type;
 	Screen() = default;
@@ -29,7 +29,7 @@ public:
 	};
 
 private:
-	mutable size_t access_ctr = 0; // ¿ÉÒÔÔÚconst ³ÉÔ±º¯Êı¶¼¿ÉÒÔ¸Ä±ä
+	mutable size_t access_ctr = 0; // å¯ä»¥åœ¨const æˆå‘˜å‡½æ•°éƒ½å¯ä»¥æ”¹å˜
 	pos cursor = 0;
 	pos height = 0, width = 0;
 	string contents;
@@ -66,4 +66,4 @@ inline Screen& Screen::set(pos r, pos col, char ch) {
 	return *this;
 }
 
-// ²»ĞèÒª¶îÍâ include Window_mgr;
+// ä¸éœ€è¦é¢å¤– include Window_mgr;

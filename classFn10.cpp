@@ -1,25 +1,25 @@
 /*
-	ÀàÑ§Ï°
+	ç±»å­¦ä¹ 
 */
 #include <iostream>;
 #include <string>;
 using namespace std;
-// ÕâÀïÊÇÉùÃ÷ÒÔ¼°¶¨Òå ÒªÊÇÕâÀïÉùÃ÷µÄºÍÍ·ÎÄ¼şÉùÃ÷µÄÃû³ÆÒ»Ñù»á¶ÔÍ·ÎÄ¼şÉùÃ÷µÄÓĞÓ°Ïì£¬Ê¹ÓÃÍ·ÎÄ¼şÀïµÄÊı¾İ³õÊ¼»¯Ê±£¬Ê¹ÓÃµÄÊÇÕâÀïµÄ³õÊ¼»¯
+// è¿™é‡Œæ˜¯å£°æ˜ä»¥åŠå®šä¹‰ è¦æ˜¯è¿™é‡Œå£°æ˜çš„å’Œå¤´æ–‡ä»¶å£°æ˜çš„åç§°ä¸€æ ·ä¼šå¯¹å¤´æ–‡ä»¶å£°æ˜çš„æœ‰å½±å“ï¼Œä½¿ç”¨å¤´æ–‡ä»¶é‡Œçš„æ•°æ®åˆå§‹åŒ–æ—¶ï¼Œä½¿ç”¨çš„æ˜¯è¿™é‡Œçš„åˆå§‹åŒ–
 typedef struct Sales_data1 
 {
-    // ³£Á¿³ÉÔ±º¯Êı , const ÊÇ±íÃ÷ Òşº¬µÄthis ËùÖ¸ÏòµÄÊÇ ³£Á¿ this: const Sales_data *const this;
+    // å¸¸é‡æˆå‘˜å‡½æ•° , const æ˜¯è¡¨æ˜ éšå«çš„this æ‰€æŒ‡å‘çš„æ˜¯ å¸¸é‡ this: const Sales_data *const this;
 	string isbn() const { return bookNo; };
 	double avg_price1() const;
 	Sales_data1& combine1(const Sales_data1 & rhs);
 
-	// Êı¾İ³ÉÔ±
+	// æ•°æ®æˆå‘˜
 	string bookNo;
 	unsigned unit_sold=0 ;
 	double revenue = 0;
 
 };
 
-// Íâ²¿¶¨Òå
+// å¤–éƒ¨å®šä¹‰
 double Sales_data1::avg_price1() const {
 	if (!unit_sold) {
 		return 0;
@@ -53,10 +53,10 @@ void salesFn() {
 			}
 		}
 
-		cout << "bookNO£º" << total.bookNo << "  unit_sold£º" << total.unit_sold << "  revenue: " << total.revenue << " Æ½¾ùÖµ£º " << total.avg_price1() << endl;
+		cout << "bookNOï¼š" << total.bookNo << "  unit_soldï¼š" << total.unit_sold << "  revenue: " << total.revenue << " å¹³å‡å€¼ï¼š " << total.avg_price1() << endl;
 	}
 	else {
-		cerr << "Ã»ÓĞÊäÈëÊı¾İ£¡";
+		cerr << "æ²¡æœ‰è¾“å…¥æ•°æ®ï¼";
 	}
 }
 

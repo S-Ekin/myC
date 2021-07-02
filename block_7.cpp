@@ -1,5 +1,5 @@
 /*
-	Óï¾ä¿é
+	è¯­å¥å—
 */
 #include <iostream>;
 #include <string>;
@@ -36,7 +36,7 @@ void countReapt() {
 		cout<< "max: " << max << " str: " << maxStr<< endl;
 }
 
-// Á¬ĞøÊäÈë
+// è¿ç»­è¾“å…¥
 void str_ask() {
 	string rsp;
 	do
@@ -45,18 +45,18 @@ void str_ask() {
 		string b;
 		cin >> a >> b;
 		if (a.size() > b.size()) {
-			cout << "a³¤" << endl;
+			cout << "aé•¿" << endl;
 		}
 		else {
-			cout << "b³¤" << endl;
+			cout << "bé•¿" << endl;
 		}
-		cout << "ÊÇ·ñ¼ÌĞøÊäÈë£¿" << endl;
+		cout << "æ˜¯å¦ç»§ç»­è¾“å…¥ï¼Ÿ" << endl;
 		cin >> rsp;
 	} while (!rsp.empty() && rsp[0]!='n');
 
 }
 
-// Òì³£´¦Àí
+// å¼‚å¸¸å¤„ç†
 void error() {
 	string arr[3] = {};
 	vector<string> strArr = {};
@@ -86,11 +86,11 @@ void divider() {
 		}
 		catch (runtime_error err)
 		{
-			cout << err.what() << "ÊÇ·ñĞèÒªÖØĞÂÊäÈë,y n" << endl;
+			cout << err.what() << "æ˜¯å¦éœ€è¦é‡æ–°è¾“å…¥,y n" << endl;
 			char c;
 			cin >> c;
 			if (c!='y') {
-				// Ìø³öÑ­»·
+				// è·³å‡ºå¾ªç¯
 				break;
 			}
 		}

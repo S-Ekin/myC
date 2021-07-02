@@ -1,20 +1,21 @@
 #include <iostream>;
 #include <iomanip>;
 using namespace std;
+typedef int dataType;
 
 typedef struct node {
 	int data;
 	struct node* next;
 } Node, * LinkList;
 
-// ÅÐ¶Ïµ¥Á´±íL ÊÇ·ñÊÇµÝÔö
+// åˆ¤æ–­å•é“¾è¡¨L æ˜¯å¦æ˜¯é€’å¢ž
 int list_isrising(LinkList L) {
 	LinkList p = L->next;
-	if (p == NULL) { // Ã»ÓÐ½Úµã
+	if (p == NULL) { // æ²¡æœ‰èŠ‚ç‚¹
 		return 1;
 	}
 
-	if (p->next == NULL) { //Ö»ÓÐÒ»¸öÔªËØ
+	if (p->next == NULL) { //åªæœ‰ä¸€ä¸ªå…ƒç´ 
 		return 0;
 	}
 
@@ -34,7 +35,7 @@ int list_isrising(LinkList L) {
 
 void createLinkList(LinkList L, int(&arr)[5]) {
 	LinkList p = L;
-	//ÓÃnew¿ÉÒÔ
+	//ç”¨newå¯ä»¥
 	for (int& i : arr) {
 		LinkList newNode = new node;
 		newNode->next = NULL;
@@ -43,7 +44,7 @@ void createLinkList(LinkList L, int(&arr)[5]) {
 		p = newNode;
 	}
 
-	// ÓÃÏÂÃæµÄÖ±½Ó¹¹Ôì½ÚµãµÄ·½Ê½²»ÐÐ
+	// ç”¨ä¸‹é¢çš„ç›´æŽ¥æž„é€ èŠ‚ç‚¹çš„æ–¹å¼ä¸è¡Œ
 	//for (int& i : arr) {
 	//	node newNode;
 	//	newNode.next = NULL;
@@ -73,9 +74,10 @@ LinkList createLinkByCin() {
 	return head;
 }
 
+// ç”¨æ•°ç»„åˆ›å»ºå•é“¾è¡¨
 Node* createLinkList2(int arr[], int n) {
-
-	Node* head =(Node *) malloc(sizeof(Node));
+	Node* head = (Node*)malloc(sizeof(Node));
+	head->next = NULL;
 
 	for (int i = 0; i < n; i++) {
 		Node* p = (Node*)malloc(sizeof(Node));
@@ -84,9 +86,52 @@ Node* createLinkList2(int arr[], int n) {
 		head->next = p;
 	}
 	return head;
-
 }
 
-int main() {
+// ç”¨äºŒå‰é“¾è¡¨åšå­˜å‚¨ç»“æž„ï¼Œé€’å½’éåŽ†æ±‚äºŒå‰æ ‘é«˜åº¦
+typedef struct btnode {
+	dataType data;
+	struct btnode* lchild, * rchild;
+} *BinTree;
+
+int mapTree(BinTree& tree, int h) {
+	h++;
+	int lH = tree->lchild != NULL ? mapTree(tree->lchild, h) : h;
+	int rH = tree->rchild != NULL ? mapTree(tree->rchild, h) : h;
+
+	return  lH > rH ? lH : rH;
+}
+
+int getHBinTree(BinTree& tree) {
+	int H = mapTree(tree, 0);
+	return H;
+}
+
+BinTree createBinTree() {
+	int arr[10] = { 0,1,2,3,4,5,6,7,8,9 };
+	BinTree arrTree[sizeof(arr)];
+	for (int& i : arr) {
+		BinTree treeNode = new btnode;
+		treeNode->data = i;
+		treeNode->lchild = NULL;
+		treeNode->rchild = NULL;
+		arrTree[i] = treeNode;
+	}
+
+	arrTree[0]->lchild = arrTree[1];
+	arrTree[0]->rchild = arrTree[2];
+	arrTree[1]->lchild = arrTree[3];
+	arrTree[1]->rchild = arrTree[7];
+	arrTree[2]->rchild = arrTree[5];
+	arrTree[3]->lchild = arrTree[4];
+	arrTree[4]->rchild = arrTree[4];
+	arrTree[9]->rchild = NULL;
+	return arrTree[0];
+}
+
+int main_12() {
+	BinTree tree = createBinTree();
+	int H = getHBinTree(tree);
+	cout << H;
 	return 0;
 }

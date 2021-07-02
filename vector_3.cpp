@@ -10,7 +10,7 @@ void initVector() {
 	auto v1 = v;
 }
 
-// Ìí¼Ó
+// æ·»åŠ 
 void pushFn() {
 	string word;
 	vector<string> text;
@@ -20,7 +20,7 @@ void pushFn() {
 	cout << text.size() << "  " << text[2] << endl;
 }
 
-// for ±éÀú
+// for éåŽ†
 void forFn() {
 	vector<int> v(10, 4);
 //	vector<int> a = vector<int>(10, 4);
@@ -31,7 +31,7 @@ void forFn() {
 		cout << i << endl;
 	}
 }
-// ´óÐ´×ª»»Êä³ö
+// å¤§å†™è½¬æ¢è¾“å‡º
 void uPWord() {
 	string word;
 	vector<string> v;
@@ -48,7 +48,7 @@ void uPWord() {
 		cout << i << endl;
 	}
 }
-// ¼ÆËãÈÝÆ÷ÀïµÄÖµ
+// è®¡ç®—å®¹å™¨é‡Œçš„å€¼
 void count() {
 	vector<int> arr;
 	int t;

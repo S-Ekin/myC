@@ -1,5 +1,5 @@
 /*
-	¶¨ÒåÊı¾İ½á¹¹£¬×Ô¼ºÍê³ÉÊı¾İµÄ²Ù×÷
+	å®šä¹‰æ•°æ®ç»“æ„ï¼Œè‡ªå·±å®Œæˆæ•°æ®çš„æ“ä½œ
 */
 #include <iostream>;
 using namespace std;
@@ -19,10 +19,10 @@ int main0() {
 	data2.revenue = data2.price * data2.units_sold;
 	if (data1.bookNo == data2.bookNo) {
 		auto total = data1.revenue + data2.revenue;
-		cout << "×Ü¼Û£º" << total << endl;
+		cout << "æ€»ä»·ï¼š" << total << endl;
 	}
 	else {
-		cout << "Êé±¾ºÅ²»ÏàÍ¬£¡"<<endl;
+		cout << "ä¹¦æœ¬å·ä¸ç›¸åŒï¼"<<endl;
 	}
 	return 0;
 }

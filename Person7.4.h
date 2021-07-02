@@ -4,7 +4,7 @@
 #include <iostream>;
 using std::string; using std::istream; using std::ostream;
 class Person {
-	// 友元
+	// 鍙嬪厓
 	friend ostream& print(ostream& os, const Person& a);
 	friend istream& read(istream& is, Person& a);
 private:
@@ -13,7 +13,7 @@ private:
 public: 
 	Person() = default;
 	Person(string a, string b) :name(a),adress(b){}
-	auto get_name()const ->string const& { return name; }; // this 是const ，它的成员返回的也得是const
+	auto get_name()const ->string const& { return name; }; // this 鏄痗onst 锛屽畠鐨勬垚鍛樿繑鍥炵殑涔熷緱鏄痗onst
 	auto get_adress()const ->string const& { return adress; };
  };
 

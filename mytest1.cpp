@@ -10,10 +10,10 @@ typedef struct node
 
 void print_link_list(LinkList head)
 {
-	LinkList p, q, r, s;//q��s�ǵ�ǰ�Ƚϵ��������,p��q��ǰ��,r��s��ǰ��
+	LinkList p, q, r, s;//q和s是当前比较的两个结点,p是q的前驱,r是s的前驱
 	while (head->next != NULL)
 	{
-		p = q = r = head->next;//������ֵ
+		p = q = r = head->next;//连续赋值
 		s = r->next;
 		while (s != NULL)
 		{
@@ -30,7 +30,7 @@ void print_link_list(LinkList head)
 			head = q->next;
 		else
 			p->next = q->next;
-		free(q);//�ͷŵ�ǰֵ��С�Ľ��ռ�
+		free(q);//释放当前值最小的结点空间
 	}
 }
 int main() {

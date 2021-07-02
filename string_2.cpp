@@ -1,11 +1,11 @@
 /*
-	string Ñ§Ï°
+	string å­¦ä¹ 
 */
 #include <string>;
 #include <iostream>;
 using namespace std;
 
-// ×¢Òâ×Ö·û×ÖÃæÁ¿ ºÍ ×Ö·ûÊÇ²»Í¬µÄ¡£¸ÅÄîºÍ²Ù×÷·½·¨¶¼²»Í¬
+// æ³¨æ„å­—ç¬¦å­—é¢é‡ å’Œ å­—ç¬¦æ˜¯ä¸åŒçš„ã€‚æ¦‚å¿µå’Œæ“ä½œæ–¹æ³•éƒ½ä¸åŒ
 
  void compareStr() {
 	string s1;
@@ -23,7 +23,7 @@ using namespace std;
 		else {
 			tem = s2;
 		}
-		cout << "³¤£º " << tem << endl;
+		cout << "é•¿ï¼š " << tem << endl;
 	};
 }
 
@@ -48,15 +48,15 @@ using namespace std;
 		}
 	}
 	
-	cout<< "È¥³ı±êµã·ûºÅ£º"<<res<<endl;
+	cout<< "å»é™¤æ ‡ç‚¹ç¬¦å·ï¼š"<<res<<endl;
 	
 	string a = "asdf";
 	char & b = a[2];
 	auto g = &b;
 	char h = 'a';
 	auto j = &h;
-	cout<< "ÒıÓÃÔÙÒıÓÃ£º"<<g<<endl;
-	cout<< "ÒıÓÃchar£º"<<&h<<endl;
+	cout<< "å¼•ç”¨å†å¼•ç”¨ï¼š"<<g<<endl;
+	cout<< "å¼•ç”¨charï¼š"<<&h<<endl;
 //	string str2 = "qer3fads!!!!!";
 //	int index = 0;
 //	while (index < str2.size()) {
@@ -66,44 +66,44 @@ using namespace std;
 
 //	cout << str2 <<endl;
 //	string t;
-//	cout << " ¿Õ×Ö·û:"<< t[0] << endl;
+//	cout << " ç©ºå­—ç¬¦:"<< t[0] << endl;
  }
 
- // ±ê×¼¿âstring ±È½Ï
+ // æ ‡å‡†åº“string æ¯”è¾ƒ
  void StringOpt() {
-	 string str1 = "ÎÒÊÇË­£¡";
-	 string str2 = "´ó¸Á";
+	 string str1 = "æˆ‘æ˜¯è°ï¼";
+	 string str2 = "å¤§å™¶";
 	 string str3 = str1;
 	 string str4 = str1 + "---" + str2;
 	 if (str1 != str3) {
-		 cout << "²»Í¬" << endl;
+		 cout << "ä¸åŒ" << endl;
 	 }
 	 else {
-		 cout << "ÏàÍ¬" << endl;
+		 cout << "ç›¸åŒ" << endl;
 	 }
 	 cout << str4 << endl;
  }
 
  void charOpt() {
-	//  char sa = "µÄ"; ´íÎó
-	 char s = 'µÄ';
-	 const char* str = "ÊÇËæ";
-	 // const char str_1[] = 'd¶¯·§'; // ´íÎó
-	//  const char str_2[] = {'¶î',"´óÊ¦¸µ"}; µÚ¶ş¸öÔªËØ´íÎó
-	const char str_3[] = {'¶î','µÄ'};
-	 const char str1[] = "ÎÒÊÇË­£¡";
-	 const char str2[] = "´ó¸Á";
-	 // const char str3[] = str1; ²»ÄÜÖ±½Ó¸´ÖÆ£¬ÒòÎªÊÇÊı×é
-	 char str3[100]; // Òª±£Ö¤×ã¹»´ó
-	 strcpy_s(str3, str1); // ¸´ÖÆ
+	//  char sa = "çš„"; é”™è¯¯
+	 char s = 'çš„';
+	 const char* str = "æ˜¯éš";
+	 // const char str_1[] = 'dåŠ¨é˜€'; // é”™è¯¯
+	//  const char str_2[] = {'é¢',"å¤§å¸ˆå‚…"}; ç¬¬äºŒä¸ªå…ƒç´ é”™è¯¯
+	const char str_3[] = {'é¢','çš„'};
+	 const char str1[] = "æˆ‘æ˜¯è°ï¼";
+	 const char str2[] = "å¤§å™¶";
+	 // const char str3[] = str1; ä¸èƒ½ç›´æ¥å¤åˆ¶ï¼Œå› ä¸ºæ˜¯æ•°ç»„
+	 char str3[100]; // è¦ä¿è¯è¶³å¤Ÿå¤§
+	 strcpy_s(str3, str1); // å¤åˆ¶
 	 char str4[100] = "";
 	 strcat_s(str4, str2);
 	 cout << "str4: " << str4 << " str3: " << str3 << endl;
 	 if (str1 != str3) {
-		 cout << "²»Í¬" << endl;
+		 cout << "ä¸åŒ" << endl;
 	 }
 	 else {
-		 cout << "ÏàÍ¬" << endl;
+		 cout << "ç›¸åŒ" << endl;
 	 }
  }
 int main2() {

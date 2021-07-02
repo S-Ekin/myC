@@ -4,7 +4,7 @@
 #include <cassert>;
 using namespace std;
 
-// ¶¨ÒåºÍÉùÃ÷ £¬ÔÙfun_8 Ê¹ÓÃÕâÀïµÄ¶¨Òå
+// å®šä¹‰å’Œå£°æ˜ ï¼Œå†fun_8 ä½¿ç”¨è¿™é‡Œçš„å®šä¹‰
 struct ABC { float b, a; void AB(float tem1, float tem2); long ABCD(float); };
 void ABC::AB(float tem1, float tem2) {
 	cout << tem1 + 3.4 << " " << tem2 + 5.6 << endl;
@@ -13,7 +13,7 @@ void ABC::AB(float tem1, float tem2) {
 	cout << b << endl;
 }
 
-// ÄÚÁªº¯Êı
+// å†…è”å‡½æ•°
 inline int fn() {
 	return 34;
 }
@@ -28,15 +28,15 @@ constexpr size_t scale(size_t cnt) {
 void constFnTest() {
 	scale(2);
 	const int a = 4;
-	scale(a); // ±¨´í£¬a²»ÊÇ³£Á¿±í´ïÊ½£»
+	scale(a); // æŠ¥é”™ï¼Œaä¸æ˜¯å¸¸é‡è¡¨è¾¾å¼ï¼›
 }
 
-// scale(2); // ±¨´í º¯ÊıÍâÖ»ÄÜ¶¨ÒåÈ«¾Ö±äÁ¿»òÕß¶ÔÏó £¬¶ø²»ÄÜÖ´ĞĞÓï¾ä¼°µ÷ÓÃº¯Êı ¡£
+// scale(2); // æŠ¥é”™ å‡½æ•°å¤–åªèƒ½å®šä¹‰å…¨å±€å˜é‡æˆ–è€…å¯¹è±¡ ï¼Œè€Œä¸èƒ½æ‰§è¡Œè¯­å¥åŠè°ƒç”¨å‡½æ•° ã€‚
 
 #define NDEBUG
 void assertFn() {
 	int a = 100;
-	assert(a > 100); // true Ê²Ã´Ò²²»×ö£¬ falseÖÕÖ¹³ÌĞò
+	assert(a > 100); // true ä»€ä¹ˆä¹Ÿä¸åšï¼Œ falseç»ˆæ­¢ç¨‹åº
 }
 
 using Iter = vector<int>::const_iterator;
@@ -54,7 +54,7 @@ void print(Iter first, Iter last)
 	cout << *first << " ";
 	print(++first, last);
 }
-// Ö¸Ïòº¯ÊıµÄÖ¸
+// æŒ‡å‘å‡½æ•°çš„æŒ‡
 void fn(int&) {
 	void (*pf)() = constFnTest;
 	pf = 0;
@@ -62,15 +62,15 @@ void fn(int&) {
 	pf = assertFn;
 }
 
-// º¯Êı±ğÃû
+// å‡½æ•°åˆ«å
 typedef int Fun(string&, int);
 typedef decltype(print) Fun2;
 
-// º¯ÊıÖ¸Õë±ğÃû
+// å‡½æ•°æŒ‡é’ˆåˆ«å
 typedef int (*Fun4)(string&);
 typedef decltype(print)* Fun3;
 
-// Ö±½ÓÉùÃ÷·µ»Øº¯ÊıÖ¸ÕëµÄº¯Êı
+// ç›´æ¥å£°æ˜è¿”å›å‡½æ•°æŒ‡é’ˆçš„å‡½æ•°
 int (*f1(int))(int*, int);
 
 string(*fw(int))[10];
@@ -114,7 +114,7 @@ void ptrFnTest() {
 		cout << f(4, 2) << endl;
 	}
 }
-// ¾Ö²¿±äÁ¿²â
+// å±€éƒ¨å˜é‡æµ‹
 string fnTest1() {
 	return "fasdf";
 }

@@ -1,16 +1,16 @@
 /*
-	µü´úÆ÷
+	è¿­ä»£å™¨
 */
 #include <string>;
 #include <iostream>;
 #include <vector>;
 using namespace std;
-// ¹Ø¼ü×Ó ¼ıÍ·ÔËËã·û
+// å…³é”®å­ ç®­å¤´è¿ç®—ç¬¦
 void iter() {
 	string s("sadfasdf");
 	if (s.begin() != s.end()) {
 		auto it = s.begin();
-		*it = toupper(*it); // ×¢ÒâÕâÀïµÄ*´ú±íµÄ²»ÊÇÖ¸Õë£¬ÊÇÒıÓÃ£»
+		*it = toupper(*it); // æ³¨æ„è¿™é‡Œçš„*ä»£è¡¨çš„ä¸æ˜¯æŒ‡é’ˆï¼Œæ˜¯å¼•ç”¨ï¼›
 	}
 	cout << s << endl;
 	for (auto i = s.begin(); i != s.end() && !isspace(*i); i++)
@@ -21,7 +21,7 @@ void iter() {
 }
 
 void iteratorVetor() {
-	vector<string> arr{ "ÎÒ", "ÊÇÒ»¸ö","³ÌĞòÔ±","£¡" };
+	vector<string> arr{ "æˆ‘", "æ˜¯ä¸€ä¸ª","ç¨‹åºå‘˜","ï¼" };
 	for (auto word = arr.cbegin(); word != arr.cend() && !word->empty(); word++) {
 		cout << *word << endl;
 	}
@@ -41,7 +41,7 @@ void countIterator() {
 	//{
 	//	if (i + 1 < arr.end()) {
 	//		int sum = *i + *(i + 1);
-	//		cout << "ÏàÁÚ :" << sum << endl;
+	//		cout << "ç›¸é‚» :" << sum << endl;
 	//	}
 	//}
 
@@ -50,7 +50,7 @@ void countIterator() {
 		auto s = arr.end() - i -1 + arr.begin();
 		int sum = *i + *s;
 
-		cout << "Ê×Î²£º" << sum << endl;
+		cout << "é¦–å°¾ï¼š" << sum << endl;
 	}
 }
 int main4() {

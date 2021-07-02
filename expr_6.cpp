@@ -1,14 +1,14 @@
 /*
-±í´ïÊ½
+è¡¨è¾¾å¼
 */
-// Ç°ÖÃµİÔöºÍºóÖÃµİÔö ÔÚÖ¸ÕëÉÏµÄÊ¹ÓÃ
+// å‰ç½®é€’å¢å’Œåç½®é€’å¢ åœ¨æŒ‡é’ˆä¸Šçš„ä½¿ç”¨
 #include <iostream>;
 #include <string>;
 using namespace std;
 
 void prtAdd() {
 	int num[4] = { 1,2,3,4 };
-	int(*ptr)[4] = &num; // Ö¸ÏòÊı×éµÄÖ¸Õë
+	int(*ptr)[4] = &num; // æŒ‡å‘æ•°ç»„çš„æŒ‡é’ˆ
 	auto p = begin(num);
 
 	auto s = size(num);
@@ -16,20 +16,20 @@ void prtAdd() {
 	char c = 'd';
 	int n = 23;
 
-	cout << "string ´óĞ¡£º" << sizeof(p) << endl;
-	cout << "char ´óĞ¡£º" << sizeof(c) << endl;
-	cout << "int ´óĞ¡£º" << sizeof(n) << endl;
+	cout << "string å¤§å°ï¼š" << sizeof(p) << endl;
+	cout << "char å¤§å°ï¼š" << sizeof(c) << endl;
+	cout << "int å¤§å°ï¼š" << sizeof(n) << endl;
 
 	while (p != end(num))
 	{
-		cout << *p++ << endl; // Ö¸ÕëÍùÏÂÒÆ¶¯£¬µ«ÊÇ·µ»ØµÄÊÇÎ´¸Ä±äÖ®Ç°µÄÖ¸Õë£¬È»ºó½âÒıÓÃ
+		cout << *p++ << endl; // æŒ‡é’ˆå¾€ä¸‹ç§»åŠ¨ï¼Œä½†æ˜¯è¿”å›çš„æ˜¯æœªæ”¹å˜ä¹‹å‰çš„æŒ‡é’ˆï¼Œç„¶åè§£å¼•ç”¨
 	}
 
 	p = begin(num);
 
 	while (p != end(num))
 	{
-		cout << *(++p) << endl; // Ö¸ÕëÍùÏÂÒÆ¶¯£¬·µ»ØÒÆ¶¯ºóµÄÖ¸Õë£¬È»ºóÔÙ½âÒıÓÃ¡£/×îºó»áÊä³öÒ»¸öÎ´¶¨ÒåµÄÖµ
+		cout << *(++p) << endl; // æŒ‡é’ˆå¾€ä¸‹ç§»åŠ¨ï¼Œè¿”å›ç§»åŠ¨åçš„æŒ‡é’ˆï¼Œç„¶åå†è§£å¼•ç”¨ã€‚/æœ€åä¼šè¾“å‡ºä¸€ä¸ªæœªå®šä¹‰çš„å€¼
 	}
 }
 
@@ -38,17 +38,17 @@ void test() {
 	int* p = x;
 	auto d = 3.45 + 3;
 	cout << sizeof(x) / sizeof(*x) << endl;
-	// cout << sizeof(p) / sizeof(*p) << endl; // sizeof(p) ÊÇÖ¸ÕëËùÕ¼µÄ´óĞ¡£¬²»ÊÇ x
+	// cout << sizeof(p) / sizeof(*p) << endl; // sizeof(p) æ˜¯æŒ‡é’ˆæ‰€å çš„å¤§å°ï¼Œä¸æ˜¯ x
 	cout << sizeof(x) / sizeof(*p) << endl;
 }
 
 void transform() {
 	const char* cp = "stt";
-	//	char* q = static_cast<char*>(cp); //´íÎó stati_cast Ö»ÄÜ×ª»»·Çµ×²ãµÄconst
-	//	char *st =	static_cast<string>(cp); // ´íÎó
-	string t = static_cast<string>(cp); // ´óÀàĞÍ±äÎªĞ¡ÀàĞÍ£¬ double -> int 
-	//	const_cast<string>(cp); // ´íÎó const_castÖ»ÄÜ¸Ä±ä³£Á¿ÊôĞÔ
-	const_cast<char*>(cp); // È¥µô»ò¼ÓÉÏ µ×²ãconst
+	//	char* q = static_cast<char*>(cp); //é”™è¯¯ stati_cast åªèƒ½è½¬æ¢éåº•å±‚çš„const
+	//	char *st =	static_cast<string>(cp); // é”™è¯¯
+	string t = static_cast<string>(cp); // å¤§ç±»å‹å˜ä¸ºå°ç±»å‹ï¼Œ double -> int 
+	//	const_cast<string>(cp); // é”™è¯¯ const_caståªèƒ½æ”¹å˜å¸¸é‡å±æ€§
+	const_cast<char*>(cp); // å»æ‰æˆ–åŠ ä¸Š åº•å±‚const
 
 	string str = "er";
 //	int a = static_cast<int>(str);
@@ -66,14 +66,14 @@ void excise() {
 }
 
 void excise2() {
-	const string str = "¶¯·§";
+	const string str = "åŠ¨é˜€";
 	int i; double d; const string* ps = &str; const char* pc = "w"; void* pv;
-	// ¾ÉÊ½Ğ´·¨
+	// æ—§å¼å†™æ³•
 	pv = (void*)ps;
 	i = int(*pc);
 	pv = &d;
 	pc = (char*)pv;
-	// c++Ğ´·¨
+	// c++å†™æ³•
 	pv = static_cast<void*>(const_cast<string*>(ps));
 	i = static_cast<int>(*pc);
 	pv = static_cast<void*>(&d);
